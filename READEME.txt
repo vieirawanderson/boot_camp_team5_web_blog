@@ -1,0 +1,5 @@
+This is a Web-Blog to BootCamp BHZ 2016
+
+The website is based in laravel framework and mySQL database
+
+to run the app please visit http://gerenciandomeusclientes.com.br/
