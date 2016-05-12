@@ -4,8 +4,8 @@
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $telefone = $_POST['telefone'];
+$cidade = $_POST['cidade'];
 $assunto = $_POST['assunto'];
-$mensagem = $_POST['mensagem'];
 $copia = $_POST['copia'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
@@ -27,8 +27,8 @@ if ($conn->connect_error) {
 } 
 
 //insert into de table
-$sql = "INSERT INTO email (email)
-VALUES ('$email')";
+$sql = "INSERT INTO email (nome, email, telefone, cidade)
+VALUES ('$nome', '$email', '$telefone', '$cidade')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
@@ -76,6 +76,9 @@ $conn->close();
 				</tr>
 				<tr>
 					<td width='320'>Telefone:<b> $telefone</b></td>
+				</tr>
+				<tr>
+					<td width='320'>Cidade:<b> $cidade</b></td>
 				</tr>
 			</td>
 		</tr>  

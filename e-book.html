@@ -42,7 +42,7 @@
               <li><a  href="index.html">Início</a></li>
               <li><a  href="sobre-nos.html">Sobre Nós</a></li>
               <li><a  href="e-book.html">E-Book</a></li>
-              <li><a  href="index.html">Cadastre-se</a></li>
+              <li><a  href="#modalContato" data-toggle="modal">Cadastre-se</a></li>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
       </nav>
@@ -88,56 +88,18 @@
                 <div class="col-md-8 blog-main">
                   <div class="post-detail sep-bottom-lg">
                     <figure class="no-margin">
-                      <img src="assets/images/blog/post-1.jpg" alt="" class="img-responsive" />
+                      <a href="#modalContato" role="button" data-toggle="modal"><img src="assets/images/e-book.jpg" alt="Baixe seu e-book!" class="img-responsive"/></a>                      
                     </figure>
                     <div class="post-detail-body sep-xs">
-                      <h3 class="text-uppercase">5 passos essenciais para ter melhores resultados com sua equipe de vendas</h3>
-                      <span class="line-sep-gray"></span>
+                                           
+                      <hr>
                       <p>
-                        Ter sucesso nas vendas não se resume apenas a gerar mais lucros. Vender mais a cada dia, é o objetivo principal de qualquer empresa, e para ter completa eficiência nessa área é preciso ter um time de qualidade, comprometido e capacitado. É de responsabilidade do líder desse time, realizar um gerenciamento adequado dos funcionários, aliado às estratégias de mercado e planejamento, para ter sucesso na área comercial.
-                        </br></br>
-                        Quer saber como gerenciar seu time de vendas com eficiência? Então, confira nossas dicas:
+                         <h3 style="text-align:center;">Baixe o seu e-book <b> GRATUITO</b> com todas as dicas para acelerar seu negócio.</h3>
+                         </br>
+                         <h1 class="text-center"><a href="#modalContato" role="button" class="btn btn-primary btn-lg" data-toggle="modal">Baixar e-book</a></h1>
                       </p>
-                      <p>
-                        <span class="letter-dropcap"> 1</span>
-                        <b>Conheça a sua equipe ­</b>
-                        </br> É fundamental conhecer os componentes da sua equipe, como o pefil de cada um, habilidades, qualidades e fraquezas. Assim, você saberá desenvolver estratégias assertivas e designá­las corretamente às pessoas.
-                      </p>
-                      <p>
-                        <span class="letter-dropcap"> 2</span>
-                        <b>Crie objetivos ­</b>
-                        </br> Não pense apenas em objetivos relacionados aos números de vendas. Pense em objetivos que podem ser alcançados internamente, que estimulem a equipe. A medida que desafios simples e menores vão sendo alcançadas, a chance de se chegar ao objetivo principal (aumentar o número de vendas) é maior, uma vez que toda a equipe está animada e empenhada. 
-                      </p>
-                      <p>
-                        <span class="letter-dropcap"> 3</span>
-                        <b>Ouvir e recompensar </b>
-                        </br> Pessoas gostam de ser notadas e ouvidas. Portando, ouça o seu funcionário, dê/recebafeedbacks e veja quais são suas reclamações e sugestões. Preocupe­se com ele para conquistá­lo e mostre sempre quais são os valores e princípios da empresa. Ele se sentirá parte daquela empresa, o ambiente de trabalho será mais agradável e suas atividades serão realizadas sempre com qualidade. 
-                      </p>
-                      <p>
-                        <span class="letter-dropcap"> 4</span>
-                        <b>Disponibilize as ferramentas necessárias </b>
-                        </br>Implemente na empresa ferramentas de organização e administração do trabalho, para que os funcionários otimizem seu tempo, aproveitando para traçar outras estratégias e prospectar novos clientes. 
-                      </p>
-                      <p>
-                        <span class="letter-dropcap"> 5</span>
-                        <b>Implemente o espírito de equipe </b>
-                        </br> Trate os seus funcionários como um só. O trabalho deve ser feito em equipe, onde uns ajudam os outros, e todos os resultados positivos ou negativos são de responsabilidade de todos. 
-                      </p>
+                      <hr>
 
-                      </br>
-                      </br>
-                      <b><p>
-                        Gostou das dicas? 
-                        </br>
-                        Então inscreva­se em nossa newsletter, e te avisamos por email sempre que algo novo sair por aqui!
-                      </p></b>
-
-                      </br>
-                      </br>
-
-                      <div class="fb-comments" data-href="http://gerenciandomeusclientes.com.br/blog-5-passos.html" data-numposts="5"></div>
-                      
-                      
                     </div>
                   </div>
 
@@ -270,7 +232,45 @@
        <a href="#" class="icon iline2-thin16 no-margin"></a>
      </div>
      <!-- Back to top end -->
+    <div id="modalContato" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h3 id="myModalLabel" class="text-center text-bold">Atenção</h3>
+            </div>
+            <div class="modal-body">
+              <p class="text-center">
+                Domingo <b>15/05/2016</b> serão sorteados <b>2 planos de 6 meses grátis de Gerenciamento CRM</b> em nuvem!!!
+                </br>
+                <b>CADASTRE-SE AGORA</b> e não perca a oportunidade de aumentar suas vendas! 
+              </p>
+              <form class="form-horizontal col-sm-12" action="enviar.php" method="post" id="formModal">
+                </br>
+                <div class="form-group"><label>Nome</label><input name="nome" class="form-control required" placeholder="Seu nome" data-placement="top" type="text"></div>
+                
+                <div class="form-group"><label>E-mail</label><input name="email" class="form-control email" placeholder="Seu e-mail" data-placement="top" data-trigger="manual" type="text"></div>
 
+                <div class="form-group"><label>Telefone</label><input name="telefone" class="form-control phone" placeholder="(99) 99999-9999" data-placement="top" data-trigger="manual" type="text"></div>
+
+                <div class="form-group"><label>Cidade</label><input name="cidade" class="form-control andress" placeholder="Sua cidade" data-placement="top" data-trigger="manual" type="text"></div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success pull-left" onclick="criarCookie()">Quero participar!</button>
+
+                  <a class="btn btn-success pull-right"  download onclick="document.getElementById('formModal').submit();document.getElementById('downloadButton').click();$('#modalContato').modal('hide');"> 
+                      Baixar E-Book
+                  </a>
+                  <a href="assets/ebooks/E-book - Como atrair clientes para o seu negócio.pdf" download id="downloadButton" ></a>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+          </div>
+        </div>
+      
 
     <!-- Include js plugin -->
     <script src="assets/js/libs/jquery-1.11.2.min.js"></script>
