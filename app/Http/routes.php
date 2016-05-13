@@ -12,5 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+
+	// DB::table('email')->insert(array('nome' => 'joaozin','email' => 'joaozin@gmail'));
+	
+
+	// $emails = DB::table('email')->where('id',2)->get();
+	// dd($emails);
+
+	// $users = DB::select("SELECT * FROM email");
+	// var_dump($users);
+
+
+	// $name = DB::Connection()->getDatabaseName();
+	// return $name;
+ //    return view('welcome');
 });
