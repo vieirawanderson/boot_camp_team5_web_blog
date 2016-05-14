@@ -14,9 +14,6 @@
 	        <header class="entry-header">
 	          <a  href="blog-potencial-crm.html">
 
-	          	{!! $post->image !!}
-
-
 	        <img src="{{asset($post->image)}}" alt="post 4" class="img-responsive img-full" />
 	            <div class="image-overlay">
 	              <p>
@@ -29,7 +26,7 @@
 	        </header>
 	        <h4 class="text-primary text-center text-uppercase mar-top-sm">{!! $post->title !!}</h4>
 	        <p>
-	        	{!! $post->shortContent !!}
+	        	{!! $post->content !!}
 
 	        {{-- <a class="btn btn-primary text-uppercase" href="{{url('blog_post',$post->url)}}" role="button" title="continue reading"> Leia Mais</a> --}}
 	      </div>

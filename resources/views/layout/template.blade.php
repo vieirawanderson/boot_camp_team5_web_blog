@@ -39,9 +39,9 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a  href="index.html">Início</a></li>
-              <li><a  href="sobre-nos.html">Sobre Nós</a></li>
-              <li><a  href="e-book.html">E-Book</a></li>
+              <li><a  href="/blog">Início</a></li>
+              <li><a  href="/sobre_nos">Sobre Nós</a></li>
+              <li><a  href="/e_book">E-Book</a></li>
               <li><a  href="#modalContato" data-toggle="modal">Cadastre-se</a></li>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
@@ -259,7 +259,14 @@
 
                 <div class="form-group"><label>Cidade</label><input name="cidade" class="form-control andress" placeholder="Sua cidade" data-placement="top" data-trigger="manual" type="text"></div>
 
-                <div class="form-group"><button type="submit" class="btn btn-success pull-right" onclick="criarCookie()">Quero participar!</button></div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success pull-left" onclick="criarCookie()">Quero participar!</button>
+
+                  <a class="btn btn-success pull-right"  download onclick="document.getElementById('formModal').submit();document.getElementById('downloadButton').click();$('#modalContato').modal('hide');"> 
+                      Baixar E-Book
+                  </a>
+                  <a href="assets/ebooks/E-book - Como atrair clientes para o seu negócio.pdf" download id="downloadButton" ></a>
+                </div>
               </form>
             </div>
             <div class="modal-footer">

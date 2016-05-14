@@ -35,9 +35,18 @@ Route::get('/blog_post','Front@blog_post');
 
 Route::get('/blog_post/{url}','Front@blog_post'); // mudar aqui para /post/{id}
 
-Route::get('/sobre_nos','Front@sobre_nos');
 
-Route::get('/e_book','Front@e_book');
+Route::get('sobre_nos', function () { 
+	return view('sobre_nos');
+});
+
+Route::get('e_book', function () { 
+	return view('e_book');
+});
+
+// Route::get('/sobre_nos','Front@sobre_nos');
+
+// Route::get('/e_book','Front@e_book');
 
 
 //Route::get('/{name}', 'Front@show');
